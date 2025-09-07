@@ -5,7 +5,6 @@ import dev.ignacio.villarreal.authenticationapi.application.helpers.UserHelperSe
 import dev.ignacio.villarreal.authenticationapi.application.services.refreshToken.RefreshTokenRetrievalService;
 import dev.ignacio.villarreal.authenticationapi.application.services.refreshToken.RefreshTokenRevocationService;
 import dev.ignacio.villarreal.authenticationapi.domain.dto.auth.AuthResponse;
-import dev.ignacio.villarreal.authenticationapi.domain.model.RefreshToken;
 import dev.ignacio.villarreal.authenticationapi.domain.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

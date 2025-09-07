@@ -1,7 +1,6 @@
 package dev.ignacio.villarreal.authenticationapi.application.services.refreshToken;
 
 import dev.ignacio.villarreal.authenticationapi.application.exceptions.notFound.RefreshTokenNotFoundException;
-import dev.ignacio.villarreal.authenticationapi.domain.model.RefreshToken;
 import dev.ignacio.villarreal.authenticationapi.infrastructure.persistence.repositories.RefreshTokenRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -3,7 +3,6 @@ package dev.ignacio.villarreal.authenticationapi.application.services.authentica
 import dev.ignacio.villarreal.authenticationapi.application.helpers.UserHelperService;
 import dev.ignacio.villarreal.authenticationapi.application.services.refreshToken.RefreshTokenRetrievalService;
 import dev.ignacio.villarreal.authenticationapi.application.services.refreshToken.RefreshTokenRevocationService;
-import dev.ignacio.villarreal.authenticationapi.domain.model.RefreshToken;
 import dev.ignacio.villarreal.authenticationapi.domain.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

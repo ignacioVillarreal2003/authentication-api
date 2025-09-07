@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta activada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        h1 { color: #2e7d32; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>✔ Cuenta activada</h1>
+    <p th:text="${message}">Tu cuenta ha sido activada con éxito.</p>
+    <a href="/login">Ir al login</a>
+</div>
+</body>
+</html>

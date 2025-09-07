@@ -31,11 +31,12 @@ public class SecurityConfig {
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/api/v1/auth/login",
-                                "/api/v1/auth/refresh",
+                                "/api/v1/authentication/login",
+                                "/api/v1/authentication/refresh",
                                 "/api/v1/users/reactive/**",
                                 "/api/v1/users/enable/**",
-                                "/api/v1/auth/activation/**",
+                                "/api/v1/authentication/activation/**",
+                                "/auth/verify",
                                 "/v2/api-docs",
                                 "/v3/api-docs",
                                 "/v3/api-docs/**",

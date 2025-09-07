@@ -1,6 +1,5 @@
 package dev.ignacio.villarreal.authenticationapi.infrastructure.persistence.repositories;
 
-import dev.ignacio.villarreal.authenticationapi.domain.model.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

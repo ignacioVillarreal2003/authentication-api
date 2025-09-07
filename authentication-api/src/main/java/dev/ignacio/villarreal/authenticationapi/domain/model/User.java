@@ -64,16 +64,6 @@ public class User extends Auditable<String> implements UserDetails {
     @Column(name = "enabled", nullable = false)
     private boolean enabled = false;
 
-    @Column(name = "activation_token", columnDefinition = "uuid")
-    private UUID activationToken;
-
-    @Column(name = "activation_token_expiration")
-    private Instant activationTokenExpiration;
-
-    @Builder.Default
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    private List<RefreshToken> refreshTokens = new ArrayList<>();
-
     @Builder.Default
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Set<UserRole> userRoles = new HashSet<>();
